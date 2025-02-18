@@ -1,0 +1,10 @@
+name : CI
+on: [push]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout kode
+                uses: action/Checkout@v2
+              - nmae: menjalankan script
+               run: echo "Hello CI/CD"
